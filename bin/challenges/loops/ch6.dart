@@ -22,8 +22,7 @@ import 'dart:io';
 
 void main() {
 
-  bool condition;
-
+  bool condition = true;
   print('Please enter the number 100');
 
   int input = int.parse(stdin.readLineSync());

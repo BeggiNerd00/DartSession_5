@@ -33,4 +33,27 @@ import 'dart:io';
 
 void main() {
 
+  bool condition = true;
+  print('Please enter the number 100');
+
+  stop();
+
+  int input = int.parse(stdin.readLineSync());
+
+  if(input == 100) {
+    print('Good job! 10 points for Gryffindor!');
+  } else {
+    print('No, I asked you to type in the number 100. 5 points will be taken from Gryffindor.');
+  }
+}
+
+
+void stop() {
+  bool condition = true;
+  while (condition) {
+    String userString = stdin.readLineSync();
+    condition = userString != 'stop';
+
+    print('Okey, stopping program...');
+  }
 }
