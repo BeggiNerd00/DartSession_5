@@ -16,4 +16,17 @@ import 'dart:io';
 
 void main() {
 
+  print("Please enter any number, and I'll calculate them all for you: ");
+
+  int userInput = int.parse(stdin.readLineSync());
+  int userInput2 = int.parse(stdin.readLineSync());
+
+  print('Here are the results for any math question: ');
+
+  print(userInput - userInput2);
+  print(userInput * userInput2);
+  print(userInput / userInput2);
+  print(userInput % userInput2);
+
+
 }
