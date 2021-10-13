@@ -14,4 +14,14 @@ import 'dart:io';
 
 void main() {
 
-}
+  print('Please input a number between 2 and 10: ');
+  int step0 = int.parse(stdin.readLineSync());
+
+
+    if (step0 > 2 && step0 < 10) {
+      print('$step0 is a valid number, thank you for playing');
+    } else {
+      print('Not a valid number for this programs request.');
+
+      }
+    }
