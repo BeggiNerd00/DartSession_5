@@ -35,15 +35,29 @@
 import 'dart:io';
 
 void main() {
-  int lapsToComplete = 10;
-  bool isMonday = true;
 
-  if (!isMonday) {
+  int lapsToComplete = 10;
+
+  //bool isMonday = true;
+  bool isMonday = false;
+
+
+  print('Is it a Monday today?');
+  String y_n = stdin.readLineSync();
+
+
+  if (y_n == 'no') {
     print("It's not monday!.");
-    for (int lap = 1; lap <= lapsToComplete; lap=lap+1) {
+    for (int lap = 10; lap <= lapsToComplete; lap++) {
       print('Coach screams: $lap out of $lapsToComplete!');
     }
   } else {
-    print("It's monday!.");
+    for (int lap = 10; lap >= lapsToComplete; lap--) {
+      print('God I hate mondays. Comon ladies hustle!: Down to ${lapsToComplete} from $lap. Keep it up!');
+    if(lap == 0) {
+      break;
+    }
+    }
   }
 }
+
