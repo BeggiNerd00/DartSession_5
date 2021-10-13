@@ -18,4 +18,24 @@ import 'dart:io';
 
 void main() {
 
-}
+  print('Is it your brithday today?');
+  String answer = stdin.readLineSync();
+  if(answer == 'yes') {
+    print("Ohhh, I'm sorry I mist it");
+
+  } else if(answer == 'no') {
+    print("Am I invited??");
+    print("1. Ofc your invited!\n2. No sorry, not enough space for more. (This will end the program)");
+    String a = stdin.readLineSync();
+
+    if(a == '1') {
+      print("Awesome! I'll see you then");
+
+    } else if(a == '2') {
+      print("Ohhh that sucks, no worries.");
+
+    }
+
+  }
+
+  }
