@@ -16,6 +16,7 @@
  */
 import 'dart:io';
 
+///Completed
 void main() {
 
   print('Is it your brithday today?');
@@ -25,7 +26,7 @@ void main() {
 
   } else if(answer == 'no') {
     print("Am I invited??");
-    print("1. Ofc your invited!\n2. No sorry, not enough space for more. (This will end the program)");
+    print("[1] Ofc your invited!\n[2] No sorry, not enough space for more. (This will end the program)");
     String a = stdin.readLineSync();
 
     if(a == '1') {
